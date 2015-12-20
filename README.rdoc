@@ -1,0 +1,3 @@
+A blog application creeated with Ruby on Rails.
+
+Author erinz
