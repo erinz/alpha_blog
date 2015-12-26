@@ -1,7 +1,11 @@
 <h2 align="center">
 Title: <%= @article.title %>
 </h2>
+
 <div class="well col-xs-8 col-xs-offset-2">
+	<% if @article.user %>
+		<span><small>Created by: <%= link_to @article.user.username, user_path(@article.user) %></small></span>
+	<% end %>
 	<h4 class="center"><strong>Description:</strong></h4>
 	<hr/>
 	<%= @article.description %>
